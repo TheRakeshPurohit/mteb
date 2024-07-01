@@ -8,11 +8,15 @@ The Massive Text Embedding Benchmark (MTEB) is intended to evaluate the quality 
 
 ## Contributing to MMTEB
 
-Everyone can join and contribute to this initiative from 1 April 2024 to 31 April 2024, win some SWAG, and become a co-author of our upcoming paper. We aim to publish the results of our findings at a top conference such as EMNLP, NeurIPS, etc. We have identified four ways to contribute:
+Everyone can join and contribute to this initiative from:
+- 10th of April 2024 to 15th of May 2024 for adding new datasets
+- 15th of May to 30th of May for running models
+
+Win some SWAG, and become a co-author of our upcoming paper. We aim to publish the results of our findings at a top conference such as EMNLP, NeurIPS, etc. We have identified four ways to contribute:
 
 ### 🗃️ 1: Contribute a new dataset
 
-For this segment, you open a PR in the MTEB repository where you create an implementation (subclass) of a task using a new language dataset uploaded to huggingface. Read more about how to add a task [here](adding_a_new_dataset.md) and check out [one of the previous additions](https://github.com/embeddings-benchmark/mteb/pull/247) for an example.
+For this segment, you open a PR in the MTEB repository where you create an implementation (subclass) of a task using a new language dataset uploaded to huggingface. Read more about how to add a dataset [here](../adding_a_dataset.md) and check out [one of the previous additions](https://github.com/embeddings-benchmark/mteb/pull/247) for an example.
 
 ### 🖥️ 2: Contribute a new task
 
@@ -32,7 +36,7 @@ We follow a similar approach as in the [SeaCrowd Project](https://github.com/SEA
 
 To be considered a co-author, at least 10 contribution points are required. The position of contributors in the author list is determined by the score they acquire, higher scores will appear first.
 
-To monitor how many points you have obtained, the contribution point tracking is now live at [this sheet](POINTS.md) and we recommend updating the score along with your PR. Past contributions also count. 
+To monitor how many points you have obtained, the contribution point tracking is now live at [this sheet](points.md) and we recommend updating the score along with your PR. Past contributions also count. 
 
 Everyone with sufficient points will also be added to the MTEB GitHub and Huggingface repository as a contributor.
 
@@ -44,10 +48,10 @@ The contribution points are computed using the following table:
 
 | Contribution type   | Demand              | Points  | Description                                                                                                       |
 | ------------------- | ------------------- | ------- | ----------------------------------------------------------------------------------------------------------------- |
-| New dataset         | As many as possible | 2+bonus | The first dataset for a language x task gains 4 bonus points. |
+| New dataset         | As many as possible | 2+bonus | The first dataset for a language x task gains 4 bonus points. If the number of new languages is >= 12 then points for that PR for a new dataset are capped at 50 (12 * 4 + 2 = 48 + 2 = 50).|
 | New task            | If relevant         | 10      | Task 2.                                                                                                           |
 | Dataset annotations | On demand           | 1       | Adding missing dataset annotations to existing datasets.                                                          |
-| (bug)fixes            | On demand           | 1-10    | Points depends the effect of code changes. If you want to find issues related to the MMTEB you can find them [here](https://github.com/embeddings-benchmark/mteb/milestone/1). |
+| Bug fixes            | On demand           | 1-10    | Points depends the effect of code changes. If you want to find issues related to the MMTEB you can find them [here](https://github.com/embeddings-benchmark/mteb/milestone/1), issues marked with "help-wanted" or "good-first-issue" are great places to start. |
 | Running Models      | On demand           | 1       | Task 3.                                   |
 | Review PR           | On demand           | 2       | Task 4.                                   |
 
